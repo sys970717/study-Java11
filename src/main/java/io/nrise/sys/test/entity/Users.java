@@ -6,6 +6,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity(name="users")
@@ -36,7 +37,7 @@ public class Users implements EntityInterface {
         if (this.updatedAt == null) updatedAt = new Date();
     }
 
-    @ManyToOne
+    @OneToMany(mappedBy="session")
     @JoinColumn(name = "owner")
-    private Session session;
+    private List<Session> session;
 }
