@@ -5,10 +5,11 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import java.util.Date;
 
+@Entity(name="session")
 public class Session implements EntityInterface {
     @Id
     @Column(length = 64, nullable = false)
-    private String owner;
+    private Long owner;
 
     @Column(name = "ipV4", nullable = false)
     private String ip;
@@ -31,7 +32,7 @@ public class Session implements EntityInterface {
         if (this.updatedAt == null) updatedAt = new Date();
     }
 
-    @ManyToOne(mappedBy="session")
+    @ManyToOne
     @JoinColumn(name = "owner")
     private Users users;
 

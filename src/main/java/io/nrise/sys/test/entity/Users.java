@@ -1,6 +1,7 @@
 package io.nrise.sys.test.entity;
 
 import lombok.Data;
+import lombok.NonNull;
 import org.springframework.data.annotation.Id;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -10,16 +11,17 @@ import java.util.List;
 
 @Data
 @Entity(name="users")
+@Table(name="users")
 public class Users implements EntityInterface {
     @Id
-    @Column(length = 64, nullable = false)
-    private String owner;
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private Long owner;
     @Column(length = 32, nullable = false)
     private String id;
     @Column(length = 256, nullable = false)
     private String password;
 
-    @Column(name = "lastAccessAt", nullable = false)
+    @Column(name = "lastAccessAt", nullable = true)
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date lastAccessAt;
 
@@ -27,7 +29,7 @@ public class Users implements EntityInterface {
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date createdAt;
 
-    @Column(name = "updatedAt", nullable = false)
+    @Column(name = "updatedAt", nullable = true)
     @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private Date updatedAt;
 
@@ -37,7 +39,15 @@ public class Users implements EntityInterface {
         if (this.updatedAt == null) updatedAt = new Date();
     }
 
-    @OneToMany(mappedBy="session")
-    @JoinColumn(name = "owner")
-    private List<Session> session;
+    @OneToMany(mappedBy="users")
+    private List session;
+
+    private Users(String id, String password) {
+        this.setId(id);
+        this.setPassword(password);
+    }
+
+    public static Users join (@NonNull String id, @NonNull String password) {
+        return new Users(id, password);
+    }
 }
