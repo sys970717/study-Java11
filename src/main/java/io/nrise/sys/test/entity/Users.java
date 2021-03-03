@@ -1,8 +1,8 @@
 package io.nrise.sys.test.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
-import org.springframework.data.annotation.Id;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 @Data
+@NoArgsConstructor
 @Entity(name="users")
 @Table(name="users")
 public class Users implements EntityInterface {
@@ -39,8 +40,8 @@ public class Users implements EntityInterface {
         if (this.updatedAt == null) updatedAt = new Date();
     }
 
-    @OneToMany(mappedBy="users")
-    private List session;
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="users")
+    private List<Session> session;
 
     private Users(String id, String password) {
         this.setId(id);

@@ -5,6 +5,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import io.nrise.sys.test.entity.*;
 
 @RepositoryRestResource
-public interface UsersRespository extends JpaRepository<Users, String> {
+public interface UsersRespository extends JpaRepository<Users, Long> {
 
 }

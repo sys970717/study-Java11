@@ -12,16 +12,16 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class NriseApplication implements CommandLineRunner {
 	@Autowired
 	private UsersRespository usersRespository;
+
+	@Autowired
 	private PasswordEncoder passwordEncoder;
-
-
 
 	public static void main(String[] args) {
 		SpringApplication.run(NriseApplication.class, args);
 	}
 
 	@Override
-	public void run(String... args) {
+	public void run(String... args) throws Exception {
 		usersRespository.save(Users.join("dd", passwordEncoder.encode("pw1234")));
 		usersRespository.save(Users.join("aa", passwordEncoder.encode("pw_1234")));
 		usersRespository.save(Users.join("ee", passwordEncoder.encode("_pw1234")));

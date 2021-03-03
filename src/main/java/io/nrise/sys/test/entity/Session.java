@@ -1,15 +1,19 @@
 package io.nrise.sys.test.entity;
 
+import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.*;
 import java.util.Date;
+import javax.persistence.*;
 
 @Entity(name="session")
+@NoArgsConstructor
 public class Session implements EntityInterface {
     @Id
-    @Column(length = 64, nullable = false)
-    private Long owner;
+    private Long id;
+
+    @Column(name="sessionId", nullable = false)
+    private String sessionId;
 
     @Column(name = "ipV4", nullable = false)
     private String ip;
@@ -32,7 +36,7 @@ public class Session implements EntityInterface {
         if (this.updatedAt == null) updatedAt = new Date();
     }
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     @JoinColumn(name = "owner")
     private Users users;
 
