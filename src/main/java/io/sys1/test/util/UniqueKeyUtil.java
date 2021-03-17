@@ -1,4 +1,4 @@
-package io.nrise.sys.test.util;
+package io.sys1.test.util;
 
 import java.util.UUID;
 

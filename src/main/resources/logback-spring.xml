@@ -39,7 +39,7 @@
     </root>
 
     <!-- LOG "io.ttl.api*" at TRACE level -->
-    <logger name="io.nrise.sys.test" level="trace" additivity="false">
+    <logger name="io.sys1.test" level="trace" additivity="false">
         <appender-ref ref="RollingFile" />
         <appender-ref ref="Console" />
     </logger>

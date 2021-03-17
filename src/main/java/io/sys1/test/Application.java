@@ -1,7 +1,7 @@
-package io.nrise.sys.test;
+package io.sys1.test;
 
-import io.nrise.sys.test.entity.Users;
-import io.nrise.sys.test.v1.user.UsersRespository;
+import io.sys1.test.entity.Users;
+import io.sys1.test.v1.user.UsersRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
-public class NriseApplication implements CommandLineRunner {
+public class Application implements CommandLineRunner {
 	@Autowired
 	private UsersRespository usersRespository;
 
@@ -17,7 +17,7 @@ public class NriseApplication implements CommandLineRunner {
 	private PasswordEncoder passwordEncoder;
 
 	public static void main(String[] args) {
-		SpringApplication.run(NriseApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 	@Override

@@ -78,10 +78,10 @@ Caused by: java.lang.IllegalStateException: Cannot load driver class: org.h2.Dri
 2021-03-02 21:36:42,774 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.10 on DESKTOP-6BSU0R5 with PID 12000 (E:\ProjectList\API\nrise\target\classes started by SYS in E:\ProjectList\API\nrise)
 2021-03-02 21:36:42,776 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-02 21:36:42,776 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-02 21:36:46,295 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: io.nrise.sys.test.entity.Users
-2021-03-02 21:36:46,298 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+2021-03-02 21:36:46,295 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: Users
+2021-03-02 21:36:46,298 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 2021-03-02 21:36:46,344 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -105,7 +105,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
 	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
 	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:785)
@@ -460,10 +460,10 @@ Caused by: java.lang.IllegalStateException: Cannot load driver class: org.hsqldb
 2021-03-03 14:01:53,505 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 22086 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 14:01:53,508 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 14:01:53,509 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 14:01:55,849 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: io.nrise.sys.test.entity.Users
-2021-03-03 14:01:55,850 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+2021-03-03 14:01:55,849 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: Users
+2021-03-03 14:01:55,850 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 2021-03-03 14:01:55,894 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -487,7 +487,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
 	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
 	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:785)
@@ -507,10 +507,10 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2021-03-03 14:04:52,300 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 23702 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 14:04:52,303 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 14:04:52,304 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 14:04:54,576 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: io.nrise.sys.test.entity.Users
-2021-03-03 14:04:54,576 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+2021-03-03 14:04:54,576 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: Users
+2021-03-03 14:04:54,576 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 2021-03-03 14:04:54,613 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -534,7 +534,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
 	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
 	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:785)
@@ -554,10 +554,10 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2021-03-03 14:30:49,603 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 37867 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 14:30:49,606 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 14:30:49,606 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 14:30:51,865 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: io.nrise.sys.test.entity.Users
-2021-03-03 14:30:51,865 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+2021-03-03 14:30:51,865 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: Users
+2021-03-03 14:30:51,865 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 2021-03-03 14:30:51,902 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -581,7 +581,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
 	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
 	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:785)
@@ -601,10 +601,10 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2021-03-03 14:33:31,586 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 39402 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 14:33:31,589 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 14:33:31,589 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 14:33:33,781 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: io.nrise.sys.test.entity.Users
-2021-03-03 14:33:33,782 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+2021-03-03 14:33:33,781 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: Users
+2021-03-03 14:33:33,782 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 2021-03-03 14:33:33,819 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -628,7 +628,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
 	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
 	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:785)
@@ -648,10 +648,10 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2021-03-03 14:37:37,796 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 41673 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 14:37:37,800 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 14:37:37,801 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 14:37:40,015 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: io.nrise.sys.test.entity.Users
-2021-03-03 14:37:40,015 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+2021-03-03 14:37:40,015 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: Users
+2021-03-03 14:37:40,015 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 2021-03-03 14:37:40,050 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -675,7 +675,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: No identifier specified for entity: io.nrise.sys.test.entity.Users
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: Users
 	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
 	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
 	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:785)
@@ -695,10 +695,10 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2021-03-03 14:39:02,572 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 42443 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 14:39:02,576 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 14:39:02,576 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 14:39:04,944 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
-2021-03-03 14:39:04,944 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+2021-03-03 14:39:04,944 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
+2021-03-03 14:39:04,944 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 2021-03-03 14:39:04,980 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -722,7 +722,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+Caused by: org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 	at org.hibernate.cfg.annotations.CollectionBinder.getCollectionType(CollectionBinder.java:773)
 	at org.hibernate.cfg.annotations.CollectionBinder.bind(CollectionBinder.java:561)
 	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2205)
@@ -744,10 +744,10 @@ Caused by: org.hibernate.AnnotationException: Collection has neither generic typ
 2021-03-03 15:00:39,622 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 55130 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:00:39,626 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:00:39,626 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 15:00:41,815 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
-2021-03-03 15:00:41,816 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+2021-03-03 15:00:41,815 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
+2021-03-03 15:00:41,816 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 2021-03-03 15:00:41,850 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -771,7 +771,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+Caused by: org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 	at org.hibernate.cfg.annotations.CollectionBinder.getCollectionType(CollectionBinder.java:773)
 	at org.hibernate.cfg.annotations.CollectionBinder.bind(CollectionBinder.java:561)
 	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2205)
@@ -793,10 +793,10 @@ Caused by: org.hibernate.AnnotationException: Collection has neither generic typ
 2021-03-03 15:01:46,844 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 55703 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:01:46,847 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:01:46,848 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 15:01:49,039 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
-2021-03-03 15:01:49,039 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+2021-03-03 15:01:49,039 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
+2021-03-03 15:01:49,039 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 2021-03-03 15:01:49,075 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -820,7 +820,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+Caused by: org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 	at org.hibernate.cfg.annotations.CollectionBinder.getCollectionType(CollectionBinder.java:773)
 	at org.hibernate.cfg.annotations.CollectionBinder.bind(CollectionBinder.java:561)
 	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2205)
@@ -1072,10 +1072,10 @@ Caused by: java.lang.IllegalStateException: Cannot load driver class: org.hsqldb
 2021-03-03 15:11:44,005 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 61636 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:11:44,013 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:11:44,013 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 15:11:46,242 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
-2021-03-03 15:11:46,243 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+2021-03-03 15:11:46,242 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
+2021-03-03 15:11:46,243 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 2021-03-03 15:11:46,279 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -1099,7 +1099,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+Caused by: org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 	at org.hibernate.cfg.annotations.CollectionBinder.getCollectionType(CollectionBinder.java:773)
 	at org.hibernate.cfg.annotations.CollectionBinder.bind(CollectionBinder.java:561)
 	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2205)
@@ -1121,10 +1121,10 @@ Caused by: org.hibernate.AnnotationException: Collection has neither generic typ
 2021-03-03 15:30:17,650 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 71742 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:30:17,653 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:30:17,654 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 15:30:19,848 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
-2021-03-03 15:30:19,849 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+2021-03-03 15:30:19,848 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
+2021-03-03 15:30:19,849 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 2021-03-03 15:30:19,884 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -1148,7 +1148,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: io.nrise.sys.test.entity.Users.session
+Caused by: org.hibernate.AnnotationException: Collection has neither generic type or OneToMany.targetEntity() defined: Users.session
 	at org.hibernate.cfg.annotations.CollectionBinder.getCollectionType(CollectionBinder.java:773)
 	at org.hibernate.cfg.annotations.CollectionBinder.bind(CollectionBinder.java:561)
 	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2205)
@@ -1170,10 +1170,10 @@ Caused by: org.hibernate.AnnotationException: Collection has neither generic typ
 2021-03-03 15:30:55,118 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 72132 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:30:55,121 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:30:55,122 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 15:30:57,270 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: io.nrise.sys.test.entity.Session.session in io.nrise.sys.test.entity.Users.session
-2021-03-03 15:30:57,272 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: io.nrise.sys.test.entity.Session.session in io.nrise.sys.test.entity.Users.session
+2021-03-03 15:30:57,270 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: Session.session in Users.session
+2021-03-03 15:30:57,272 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: Session.session in Users.session
 2021-03-03 15:30:57,307 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: io.nrise.sys.test.entity.Session.session in io.nrise.sys.test.entity.Users.session
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: Session.session in Users.session
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -1197,7 +1197,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: io.nrise.sys.test.entity.Session.session in io.nrise.sys.test.entity.Users.session
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: Session.session in Users.session
 	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:848)
 	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:799)
 	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
@@ -1217,15 +1217,15 @@ Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown targ
 2021-03-03 15:33:20,561 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 73478 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:33:20,565 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:33:20,565 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 15:33:22,705 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: io.nrise.sys.test.entity.Session.session in io.nrise.sys.test.entity.Users.session
-2021-03-03 15:33:22,706 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: io.nrise.sys.test.entity.Session.session in io.nrise.sys.test.entity.Users.session
+2021-03-03 15:33:22,705 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: Session.session in Users.session
+2021-03-03 15:33:22,706 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: Session.session in Users.session
 2021-03-03 15:33:31,761 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 73581 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:33:31,763 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:33:31,764 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 15:33:33,802 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
-2021-03-03 15:33:33,802 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+2021-03-03 15:33:33,802 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
+2021-03-03 15:33:33,802 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 2021-03-03 15:33:33,834 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -1249,14 +1249,14 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
 	... 22 common frames omitted
-Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862)
 	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880)
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902)
@@ -1273,10 +1273,10 @@ Caused by: org.hibernate.MappingException: Repeated column in mapping for entity
 2021-03-03 15:36:06,990 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 75005 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:36:06,994 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:36:06,995 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 15:36:09,217 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
-2021-03-03 15:36:09,218 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+2021-03-03 15:36:09,217 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
+2021-03-03 15:36:09,218 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 2021-03-03 15:36:09,250 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -1300,14 +1300,14 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
 	... 22 common frames omitted
-Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862)
 	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880)
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902)
@@ -1324,10 +1324,10 @@ Caused by: org.hibernate.MappingException: Repeated column in mapping for entity
 2021-03-03 15:38:32,834 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 76328 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:38:32,836 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:38:32,837 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 15:38:35,071 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
-2021-03-03 15:38:35,072 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+2021-03-03 15:38:35,071 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
+2021-03-03 15:38:35,072 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 2021-03-03 15:38:35,108 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -1351,14 +1351,14 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
 	... 22 common frames omitted
-Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862)
 	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880)
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902)
@@ -1487,8 +1487,8 @@ Consider defining a bean of type 'org.springframework.security.crypto.password.P
 2021-03-03 15:51:47,556 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
 2021-03-03 15:51:50,298 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-03-03 15:51:51,228 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started NriseApplication in 9.069 seconds (JVM running for 9.5)
-2021-03-03 15:52:31,977 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: No default constructor for entity:  : io.nrise.sys.test.entity.Users; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : io.nrise.sys.test.entity.Users] with root cause
-org.hibernate.InstantiationException: No default constructor for entity:  : io.nrise.sys.test.entity.Users
+2021-03-03 15:52:31,977 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: No default constructor for entity:  : Users; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : Users] with root cause
+org.hibernate.InstantiationException: No default constructor for entity:  : Users
 	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:85)
 	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:105)
 	at org.hibernate.tuple.entity.AbstractEntityTuplizer.instantiate(AbstractEntityTuplizer.java:705)
@@ -1715,8 +1715,8 @@ java.lang.IllegalArgumentException: Could not resolve repository metadata for 1.
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 2021-03-03 15:53:47,197 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9090-exec-10] Resolved [java.lang.IllegalArgumentException: Could not resolve repository metadata for 1.]
-2021-03-03 15:54:30,688 ERROR org.springframework.data.rest.webmvc.RepositoryRestExceptionHandler [http-nio-9090-exec-5] Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
-org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+2021-03-03 15:54:30,688 ERROR org.springframework.data.rest.webmvc.RepositoryRestExceptionHandler [http-nio-9090-exec-5] Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
+org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:374)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
@@ -1816,7 +1816,7 @@ org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the w
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3343)
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3289)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1854,7 +1854,7 @@ Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
 	... 93 common frames omitted
-Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.hibernate.event.internal.DefaultLoadEventListener.checkIdClass(DefaultLoadEventListener.java:155)
 	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:71)
 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:104)
@@ -1867,14 +1867,14 @@ Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type fo
 	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2767)
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3322)
 	... 128 common frames omitted
-2021-03-03 15:54:30,690 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9090-exec-5] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String]
+2021-03-03 15:54:30,690 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9090-exec-5] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String]
 2021-03-03 15:55:19,316 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 85587 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:55:19,319 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:55:19,319 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
 2021-03-03 15:55:21,990 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-03-03 15:55:22,864 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started NriseApplication in 8.954 seconds (JVM running for 9.405)
-2021-03-03 15:55:27,124 ERROR org.springframework.data.rest.webmvc.RepositoryRestExceptionHandler [http-nio-9090-exec-1] Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
-org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+2021-03-03 15:55:27,124 ERROR org.springframework.data.rest.webmvc.RepositoryRestExceptionHandler [http-nio-9090-exec-1] Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
+org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:374)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
@@ -1974,7 +1974,7 @@ org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the w
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3343)
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3289)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2012,7 +2012,7 @@ Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
 	... 93 common frames omitted
-Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.hibernate.event.internal.DefaultLoadEventListener.checkIdClass(DefaultLoadEventListener.java:155)
 	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:71)
 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:104)
@@ -2025,14 +2025,14 @@ Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type fo
 	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2767)
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3322)
 	... 128 common frames omitted
-2021-03-03 15:55:27,169 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9090-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String]
+2021-03-03 15:55:27,169 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9090-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String]
 2021-03-03 15:56:05,346 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 86068 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:56:05,349 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:56:05,349 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-03 15:56:07,503 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
-2021-03-03 15:56:07,504 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+2021-03-03 15:56:07,503 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
+2021-03-03 15:56:07,504 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 2021-03-03 15:56:07,535 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
@@ -2056,14 +2056,14 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
 	... 22 common frames omitted
-Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: io.nrise.sys.test.entity.Session column: owner (should be mapped with insert="false" update="false")
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: Session column: owner (should be mapped with insert="false" update="false")
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862)
 	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880)
 	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902)
@@ -2082,8 +2082,8 @@ Caused by: org.hibernate.MappingException: Repeated column in mapping for entity
 2021-03-03 15:56:36,546 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
 2021-03-03 15:56:38,978 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-03-03 15:56:39,872 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started NriseApplication in 8.734 seconds (JVM running for 9.16)
-2021-03-03 15:57:05,992 ERROR org.springframework.data.rest.webmvc.RepositoryRestExceptionHandler [http-nio-9090-exec-1] Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
-org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+2021-03-03 15:57:05,992 ERROR org.springframework.data.rest.webmvc.RepositoryRestExceptionHandler [http-nio-9090-exec-1] Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
+org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:374)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
@@ -2183,7 +2183,7 @@ org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the w
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3343)
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3289)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2221,7 +2221,7 @@ Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
 	... 93 common frames omitted
-Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.hibernate.event.internal.DefaultLoadEventListener.checkIdClass(DefaultLoadEventListener.java:155)
 	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:71)
 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:104)
@@ -2234,7 +2234,7 @@ Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type fo
 	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2767)
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3322)
 	... 128 common frames omitted
-2021-03-03 15:57:06,031 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9090-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String]
+2021-03-03 15:57:06,031 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9090-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String]
 2021-03-03 15:57:34,739 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 86846 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:57:34,741 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:57:34,741 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
@@ -2316,8 +2316,8 @@ Caused by: org.hibernate.id.IdentifierGenerationException: Unknown integral data
 2021-03-03 15:59:15,046 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
 2021-03-03 15:59:17,411 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-03-03 15:59:18,218 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started NriseApplication in 8.559 seconds (JVM running for 8.973)
-2021-03-03 15:59:21,425 ERROR org.springframework.data.rest.webmvc.RepositoryRestExceptionHandler [http-nio-9090-exec-1] Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
-org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+2021-03-03 15:59:21,425 ERROR org.springframework.data.rest.webmvc.RepositoryRestExceptionHandler [http-nio-9090-exec-1] Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
+org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:374)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
@@ -2417,7 +2417,7 @@ org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the w
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3343)
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3289)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2455,7 +2455,7 @@ Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
 	... 93 common frames omitted
-Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.hibernate.event.internal.DefaultLoadEventListener.checkIdClass(DefaultLoadEventListener.java:155)
 	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:71)
 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:104)
@@ -2468,14 +2468,14 @@ Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type fo
 	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2767)
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3322)
 	... 128 common frames omitted
-2021-03-03 15:59:21,467 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9090-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String]
+2021-03-03 15:59:21,467 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9090-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String]
 2021-03-03 15:59:49,929 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 88087 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 15:59:49,932 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 15:59:49,932 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
 2021-03-03 15:59:52,523 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-03-03 15:59:53,382 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started NriseApplication in 8.851 seconds (JVM running for 9.275)
-2021-03-03 15:59:56,406 ERROR org.springframework.data.rest.webmvc.RepositoryRestExceptionHandler [http-nio-9090-exec-1] Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
-org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+2021-03-03 15:59:56,406 ERROR org.springframework.data.rest.webmvc.RepositoryRestExceptionHandler [http-nio-9090-exec-1] Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
+org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:374)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
@@ -2575,7 +2575,7 @@ org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the w
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3343)
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3289)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2613,7 +2613,7 @@ Caused by: java.lang.IllegalArgumentException: Provided id of the wrong type for
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
 	... 93 common frames omitted
-Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String
+Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String
 	at org.hibernate.event.internal.DefaultLoadEventListener.checkIdClass(DefaultLoadEventListener.java:155)
 	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:71)
 	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:104)
@@ -2626,14 +2626,14 @@ Caused by: org.hibernate.TypeMismatchException: Provided id of the wrong type fo
 	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2767)
 	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3322)
 	... 128 common frames omitted
-2021-03-03 15:59:56,444 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9090-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class io.nrise.sys.test.entity.Users. Expected: class java.lang.Long, got class java.lang.String]
+2021-03-03 15:59:56,444 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-9090-exec-1] Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String; nested exception is java.lang.IllegalArgumentException: Provided id of the wrong type for class Users. Expected: class java.lang.Long, got class java.lang.String]
 2021-03-03 16:00:58,753 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting NriseApplication using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 88763 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
 2021-03-03 16:00:58,755 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
 2021-03-03 16:00:58,755 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
 2021-03-03 16:01:01,601 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-03-03 16:01:02,530 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started NriseApplication in 9.189 seconds (JVM running for 9.636)
-2021-03-03 16:01:13,183 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: No default constructor for entity:  : io.nrise.sys.test.entity.Users; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : io.nrise.sys.test.entity.Users] with root cause
-org.hibernate.InstantiationException: No default constructor for entity:  : io.nrise.sys.test.entity.Users
+2021-03-03 16:01:13,183 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: No default constructor for entity:  : Users; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : Users] with root cause
+org.hibernate.InstantiationException: No default constructor for entity:  : Users
 	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:85)
 	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:105)
 	at org.hibernate.tuple.entity.AbstractEntityTuplizer.instantiate(AbstractEntityTuplizer.java:705)
@@ -2792,8 +2792,8 @@ org.hibernate.InstantiationException: No default constructor for entity:  : io.n
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-2021-03-03 16:01:27,704 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: No default constructor for entity:  : io.nrise.sys.test.entity.Users; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : io.nrise.sys.test.entity.Users] with root cause
-org.hibernate.InstantiationException: No default constructor for entity:  : io.nrise.sys.test.entity.Users
+2021-03-03 16:01:27,704 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: No default constructor for entity:  : Users; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : Users] with root cause
+org.hibernate.InstantiationException: No default constructor for entity:  : Users
 	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:85)
 	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:105)
 	at org.hibernate.tuple.entity.AbstractEntityTuplizer.instantiate(AbstractEntityTuplizer.java:705)
@@ -2940,3 +2940,9 @@ org.hibernate.InstantiationException: No default constructor for entity:  : io.n
 2021-03-03 16:03:00,113 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
 2021-03-03 16:03:02,827 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-03-03 16:03:03,704 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started NriseApplication in 9.007 seconds (JVM running for 9.471)
+2021-03-17 15:53:55,857 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-17 15:55:40,086 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application using Java 11.0.6 on sys970717ui-MacBookPro.local with PID 4559 (/Users/sys970717/Desktop/Application/practice/test/target/classes started by sys970717 in /Users/sys970717/Desktop/Application/practice/test)
+2021-03-17 15:55:40,088 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-17 15:55:40,091 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-17 15:55:42,862 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-17 15:55:43,719 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 9.053 seconds (JVM running for 9.505)

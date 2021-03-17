@@ -1,4 +1,4 @@
-package io.nrise.sys.test.entity;
+package io.sys1.test.entity;
 
 import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
