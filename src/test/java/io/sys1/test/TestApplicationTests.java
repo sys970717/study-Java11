@@ -22,7 +22,7 @@ class TestApplicationTests {
 		File[] hiddenFiles = new File(".").listFiles(new FileFilter() {
 			@Override
 			public boolean accept(File pathname) {
-				pathname.isHidden();
+				return pathname.isHidden();
 			}
 		});
 
@@ -90,6 +90,7 @@ class TestApplicationTests {
 				result1.add(apple);
 			}
 		}
+		return result1;
 	}
 
 	@Test
